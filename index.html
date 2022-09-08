@@ -21,100 +21,124 @@
           "type": "flex",
           "altText": "Flex Message",
           "contents": {
-            "type": "bubble",
-            "body": {
-              "type": "box",
-              "layout": "vertical",
-              "spacing": "md",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "BROWN'S ADVENTURE",
-                  "size": "xl",
-                  "gravity": "center",
-                  "weight": "bold",
-                  "wrap": true
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "spacing": "sm",
-                  "margin": "lg",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Date",
-                          "flex": 1,
-                          "size": "sm",
-                          "color": "#AAAAAA"
-                        },
-                        {
-                          "type": "text",
-                          "text": "Monday 25, 9:00PM",
-                          "flex": 4,
-                          "size": "sm",
-                          "color": "#666666",
-                          "wrap": true
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Place",
-                          "flex": 1,
-                          "size": "sm",
-                          "color": "#AAAAAA"
-                        },
-                        {
-                          "type": "text",
-                          "text": "LINE Thailand",
-                          "flex": 4,
-                          "size": "sm",
-                          "color": "#666666",
-                          "wrap": true
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "margin": "xxl",
-                      "contents": [
-                        {
-                          "type": "spacer"
-                        },
-                        {
-                          "type": "image",
-                          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/linecorp_code_withborder.png",
-                          "size": "xl",
-                          "aspectMode": "cover"
-                        },
-                        {
-                          "type": "text",
-                          "text": "You can enter the theater by using this code instead of a ticket",
-                          "margin": "xxl",
-                          "size": "xs",
-                          "color": "#AAAAAA",
-                          "wrap": true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://www.i-pic.info/i/IoxN227969.png",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "uri": "https://linecorp.com"
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "md",
+    "action": {
+      "type": "uri",
+      "uri": "https://linecorp.com"
+    },
+    "contents": [
+      {
+        "type": "text",
+        "text": "อัปเดทลายแทงมหาสมบัติ",
+        "size": "xl",
+        "weight": "bold"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "App check ASSET V.3",
+                "weight": "bold",
+                "margin": "sm",
+                "flex": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "style": "primary",
+        "color": "#905c44",
+        "margin": "xxl",
+        "action": {
+          "type": "uri",
+          "label": "Shift A",
+          "uri": "https://www.appsheet.com/newshortcut/0fd03b74-b5a2-4a72-83fe-33575f428c65"
+        }
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "color": "#905c44",
+            "margin": "xxl",
+            "action": {
+              "type": "uri",
+              "label": "Shift B",
+              "uri": "https://www.appsheet.com/newshortcut/34ad62d0-b83d-4071-9894-cf4e76249600"
             }
           }
-        }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "color": "#905c44",
+            "margin": "xxl",
+            "action": {
+              "type": "uri",
+              "label": "Shift C",
+              "uri": "https://www.appsheet.com/newshortcut/3d602ddd-9739-400b-b2e1-20cad1efba01"
+            }
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "color": "#905c44",
+            "margin": "xxl",
+            "action": {
+              "type": "uri",
+              "label": "Shift D",
+              "uri": "https://www.appsheet.com/newshortcut/0c5da3ef-ea73-4bd6-87cc-e5f75dec4a07"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
       ])
       if (result) {
         alert(`[${result.status}] Message sent!`)
