@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
   <title>My LIFF App</title>
   <style>
-    body { padding: 256px }
-    button { display: none; width: 50%; padding: 30px 0; margin: 30px auto }
+    body { padding: 512px }
+    button { display: none; width: 100%; padding: 30px 0; margin: 30px auto }
   </style>
 </head>
 <body>
@@ -20,7 +20,7 @@
         {
           "type": "flex",
           "altText": "App Check ASSET V.3",
-          "contents": {
+          "contents":{
   "type": "bubble",
   "hero": {
     "type": "image",
@@ -30,17 +30,13 @@
     "aspectMode": "cover",
     "action": {
       "type": "uri",
-      "uri": "sharelink"
+      "uri": "https://sites.google.com/view/asset-2011-2022"
     }
   },
   "body": {
     "type": "box",
     "layout": "vertical",
     "spacing": "md",
-    "action": {
-      "type": "uri",
-      "uri": "https://sites.google.com/view/asset-2011-2022"
-    },
     "contents": [
       {
         "type": "text",
@@ -139,7 +135,7 @@
     ]
   }
 }
-}
+        }
       ])
       if (result) {
         alert(`[${result.status}] Message sent!`)
